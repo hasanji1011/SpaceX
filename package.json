@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --prod && ng run test-app:server:production",
+    "start": "npm run serve:ssr",
+    "build": "npm run build:ssr",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -13,7 +13,7 @@
     "build:ssr": "ng build --prod && ng run test-app:server:production",
     "prerender": "ng run test-app:prerender"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~10.0.2",
     "@angular/common": "~10.0.2",
